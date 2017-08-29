@@ -89,8 +89,8 @@ define(['jquery', 'jqueryUI', 'widget'], function($, $UI, widget) {
 				width: CFG.width + 'px',
 				height: CFG.height + 'px',
 				//如果传入x、y，则按传入参数定位，否则按水平垂直居中定位
-				left: CFG.x || ($('body').width() - CFG.width)/2 + 'px',
-				top: CFG.y || ($('body').height() - CFG.height)/2 + 'px'					
+				left: CFG.x || ($(window).width() - CFG.width)/2 + 'px',
+				top: CFG.y || ($(window).height() - CFG.height)/2 + 'px'					
 			});
 			
 			//是否添加皮肤，为父元素添加class，通过层叠设置子元素样式
